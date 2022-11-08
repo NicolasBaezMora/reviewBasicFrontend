@@ -1,0 +1,29 @@
+<div class="col">
+
+    <div class="row">
+        <div class="col">
+            <button mat-button (click)="add()">+</button>
+        </div>
+        <div class="col">
+            <button mat-button (click)="rest()">-</button>
+        </div>
+    </div>
+
+    <div *ngIf="data.length > 0; else noData" class="row">
+        <span>Valores:</span>
+        <mat-list role="list" *ngFor="let item of data">
+            <mat-list-item role="listitem">Item {{item}}</mat-list-item>
+        </mat-list>
+
+    </div>
+
+</div>
+
+<ng-template #noData>
+
+    <div class="no-data">
+        <span>No hay datos</span>
+
+    </div>
+
+</ng-template>

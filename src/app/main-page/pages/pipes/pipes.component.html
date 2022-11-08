@@ -1,0 +1,92 @@
+<h2>Pipes</h2>
+<p>
+    Los pipes o tuberias son utiles, ya que nos permiten transformar cadenas, montos de moneda, fechas y otros datos
+    para su visualización. Las canalizaciones son funciones simples
+    para usar en expresiones de plantilla para aceptar un valor de entrada y devolver un valor transformado. Las
+    tuberías son útiles porque puede usarlas en toda su aplicación, mientras solo declara cada tubería una vez.
+</p>
+<h3><b>Tipos de pipes:</b></h3>
+
+<div class="card">
+    <i><b>--DatePipe--</b></i>
+    Nos permite dar fomato a un valor de fecha de acuerdo a ciertas reglas
+
+    <div class="row" style="margin-top: 20px;">
+        <div class="col" style="color: red;">
+            <div class="row"><span>Sin formato: {{"8-11-22"}}</span></div>
+        </div>
+        <div class="col" style="color: green;">
+            <div class="row"><span>Con formato: {{"8-11-22" | date : 'short'}}</span></div>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="card">
+    <i><b>--UpperCasePipe--</b></i>
+    Transforma un texto a mayúsculas
+    <div class="row" style="margin-top: 20px;">
+        <div class="col" style="color: red;">
+            <div class="row"><p>Sin formato: {{"hello world"}}</p></div>
+        </div>
+        <div class="col" style="color: green;">
+            <div class="row"><p>Con formato: {{"hello world" | uppercase}}</p></div>
+        </div>
+    </div>
+</div>
+
+<hr>
+<div class="card">
+    <i><b>--LowerCasePipe--</b></i>
+    Transforma un texto a minúsculas
+    <div class="row" style="margin-top: 20px;">
+        <div class="col" style="color: red;">
+            <div class="row"><p>Sin formato: {{"HELLO WORLD"}}</p></div>
+        </div>
+        <div class="col" style="color: green;">
+            <div class="row"><p>Con formato: {{"HELLO WORLD" | lowercase}}</p></div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="card">
+    <i><b>--CurrencyPipe--</b></i>
+    Transforma un numero en una cadena de moneda
+    <div class="row" style="margin-top: 20px;">
+        <div class="col" style="color: red;">
+            <div class="row"><p>Sin formato: {{1000000}}</p></div>
+        </div>
+        <div class="col" style="color: green;">
+            <div class="row"><p>Con formato: {{1000000| currency : 'EUR'}}</p></div>
+        </div>
+    </div>
+</div>
+
+
+<hr>
+<div class="card">
+    <i><b>--DecimalPipe--</b></i>
+    Transforma un numero a una cadena con punto decimal
+    <div class="row" style="margin-top: 20px;">
+        <div class="col" style="color: red;">
+            <div class="row"><p>Sin formato: {{1000000}}</p></div>
+        </div>
+        <div class="col" style="color: green;">
+            <div class="row"><p>Con formato: {{1000000| number}}</p></div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="card">
+    <i><b>--PercentPipe--</b></i>
+    Transforma un numero a una cadena de porcentaje
+    <div class="row" style="margin-top: 20px;">
+        <div class="col" style="color: red;">
+            <div class="row"><p>Sin formato: {{95}}</p></div>
+        </div>
+        <div class="col" style="color: green;">
+            <div class="row"><p>Con formato: {{95| percent}}</p></div>
+        </div>
+    </div>
+</div>

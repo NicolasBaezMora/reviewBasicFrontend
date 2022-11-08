@@ -1,0 +1,15 @@
+h3 {
+    color: rgb(0, 178, 27);
+}
+
+.c-container {
+    border: 1px solid rgb(0, 178, 27);
+    border-radius: 25px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.btn-sc {
+    background-color: rgb(0, 178, 27);
+    color: white;
+}

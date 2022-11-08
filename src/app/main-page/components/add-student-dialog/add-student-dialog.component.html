@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>Add new Student</h1>
+<div mat-dialog-content>
+    <div class="row">
+        <div class="col">
+            <div class="row">
+                <mat-form-field appearance="fill">
+                    <mat-label>Name</mat-label>
+                    <input matInput [(ngModel)]="formStudent.name">
+                </mat-form-field>
+            </div>
+            <div class="row">
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Lastname</mat-label>
+                    <input matInput [(ngModel)]="formStudent.lastname">
+                </mat-form-field>
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button (click)="addStudent()">Add</button>
+</div>

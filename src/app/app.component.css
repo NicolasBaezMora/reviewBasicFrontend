@@ -1,0 +1,12 @@
+.container {
+    margin-top: 20px;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+h1 {
+    margin-top: 10px;
+    text-align: center;
+}

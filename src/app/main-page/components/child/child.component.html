@@ -1,0 +1,29 @@
+<div class="c-container">
+
+    <h3>Componente hijo</h3>
+
+    <div class="col">
+        <div class="row">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Say something</mat-label>
+                <input [(ngModel)]="msgC" matInput>
+            </mat-form-field>
+        </div>
+
+        
+
+        <div class="row-3">
+            <button (click)="send()" mat-raised-button class="btn-sc">Send</button>
+        </div>
+
+        <hr>
+
+        <div class="chat" *ngFor="let msg of chatParent">
+            <span> - {{msg}}</span>
+        </div>
+
+    </div>
+
+    
+
+</div>

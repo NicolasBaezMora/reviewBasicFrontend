@@ -1,0 +1,21 @@
+<div class="col">
+    <div class="row">
+        
+        <p>
+            <b>ngModel: </b>
+            Implementa binding (Básicamente se trata de un enlace, entre algo
+            que tienes en la definición del componente con un campo de formulario del template (vista) )
+        </p>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <i>{{valueData}}</i>
+        </div>
+        <div class="col-6">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Type something</mat-label>
+                <input [(ngModel)]="valueData" matInput autocomplete="off" type="text">
+            </mat-form-field>
+        </div>
+    </div>
+</div>

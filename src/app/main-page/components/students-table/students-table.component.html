@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Lastname</th>
+            <th>Subjects</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students">
+            <th scope="row">{{student.id}}</th>
+            <td>{{student.name}}</td>
+            <td>{{student.lastname}}</td>
+            <td>{{student.subjects! | pipeSubjects}}</td>
+            <td>
+                <button mat-button color="primary" (click)="deleteStudent(student!.id!)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<button mat-raised-button class="btn-add" (click)="addStudent()">
+    Add student
+</button>

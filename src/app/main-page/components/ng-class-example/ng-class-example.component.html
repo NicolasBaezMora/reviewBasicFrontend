@@ -1,0 +1,35 @@
+<div class="col">
+
+    <div class="row">
+        <p>
+            <b>ngClass: </b>
+            Permite añadir/eliminar varias clases
+        </p>
+    </div>
+
+    <div class="row">
+
+        <div [ngClass]="stateFigure"></div>
+
+        
+
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col">
+            <button mat-button class="btn-rect" (click)="setRectangle()">Rectangulo</button>
+
+        </div>
+        <div class="col">
+            <button mat-button class="btn-circ" (click)="setCircle()">Circulo</button>
+
+        </div>
+        <div class="col">
+            <button mat-button class="btn-trin" (click)="setTriangle()">Triangulo</button>
+
+        </div>
+    </div>
+
+</div>

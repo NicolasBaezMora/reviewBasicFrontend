@@ -1,0 +1,15 @@
+h2 {
+    color: rgb(193, 63, 3);
+}
+
+
+.p-container {
+    border: 1px solid rgb(193, 63, 3);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.btn-sp {
+    background-color: rgb(193, 63, 3);
+    color: white;
+}
